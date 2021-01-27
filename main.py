@@ -1,9 +1,6 @@
 
 print('hola git')   
 
-print ('hola dddvsfgsdfsdfsfsdfsdfsdfsdfdcd')
+print ('patricia')
 
-print('Hola gente')
-
-print('Benja te hago un commit')
-
+print('guillermo')
