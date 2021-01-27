@@ -1,28 +1,7 @@
 
-print('hola git')
+# EJEMPLO DE MANEJO  DE REPOSITORIOS Y CLASES POR MEDIO DE PAQUETES
 
+def main():
+    pass
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print('hola')
+main()
