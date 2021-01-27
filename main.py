@@ -1,8 +1,7 @@
 
-print('hola git')
-print("Te vigilo")
-print('fix')
+# EJEMPLO DE MANEJO  DE REPOSITORIOS Y CLASES POR MEDIO DE PAQUETES
 
-print(" evander")
+def main():
+    pass
 
-print("nicole")
+main()
