@@ -15,6 +15,23 @@
 #     dni:str
 #     direccion:list
 
+    def __init__ (self, nombre, apellido, fecha_de_nacimiento, dni, direccion ):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.__fecha_de_nacimiento = fecha_de_nacimiento
+        self.dni = dni
+        self.direccion = direccion
+
+    def __str__ (self):
+        return f'''
+        nombre : {self.nombre} 
+        apellido : {self.apellido}
+        fecha de nacimiento : {self.__fecha_de_nacimiento }
+        DNI : {self.dni} 
+        direccion : {self.direccion}
+        '''
+
+
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
 #     def getNombreCompleto(self):
