@@ -13,10 +13,19 @@ class Persona(object):
         return f"nombre: {self.nombre}, apellido: {self.apellido}, fecha: {fechastr}, dni: {self.dni}, direccion: {self.direccion}"
     def getNombreCompleto(self):
         return self.nombre+" "+self.apellido
+    def getDia(self):
+        return self.fecha.day
+    def getMes(self):
+        return self.fecha.month
+    def getAño(self):
+        return self.fecha.year
 
 javi1=Persona("javi","menendez","19/06/1998","123456789F",["Narvaez","51","4º","Izq"])
 print(javi1)
 print(javi1.getNombreCompleto())
+print(javi1.getDia())
+print(javi1.getMes())
+print(javi1.getAño())
 
 
 # print("19/06/1998")
