@@ -8,10 +8,14 @@ class Persona():
         self.direccion = direccion
 
     def __str__(self):
-        return f'\n {self.nombre} {self.apellido} {self.fecha_de_nacimiento} {self.dni} {self.direccion} \n'
+        return f'\n{self.nombre}\n{self.apellido}\n{self.fecha_de_nacimiento}\n{self.dni}\n{self.direccion}\n'
+
+    def getNombreCompleto(self):
+        return self.nombre + ' ' + self.apellido
             
 
 
 individuo = Persona('Ramon', 'De Pitis', '21-2-1968', '53728994T', 'Calle caballo' )
 
 print(individuo)
+print(individuo.getNombreCompleto())
