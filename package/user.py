@@ -8,11 +8,17 @@
 
 
 class User:
+    email = 'aaa@gmail.com'
+    key = '05cur0'
     active = False
+
+    def validation(self, param_email, param_key):
+        if (self.email == param_email) and (self.key == param_key):
+            return True
+        else:
+            return False
     
-    def __init__(self, email, key):
-        self.email = email
-        self.key = key
+    
     
 
 
