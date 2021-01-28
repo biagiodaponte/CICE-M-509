@@ -9,7 +9,10 @@ class Persona():
     def __str__(self):
         return f'\n Nombre: {self.nombre}\n Apellido: {self.apellido}\n Fecha de nacimiento: {self.fnacimiento} \n Dni: {self.dni} \n Direccion: {self.direccion}\n'
 
+    def getNombreCompleto(self):
+        return self.__nombre 
 
 anonimo = Persona('Guillermo', 'Ginestal','7/03/89','204290350Y','Calle Avila' )
 
 print(anonimo)
+
