@@ -36,7 +36,17 @@ print (albita)
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
 #     def getNombreCompleto(self):
-#         pass
+#         
+
+def getNombreCompleto(self):
+    return f' El nombre completo de la persona es:  {self.nombre}  {self.apellido}'
+
+print (getNombreCompleto(albita))
+
+
+
+
+
     
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
