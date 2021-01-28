@@ -1,6 +1,6 @@
 
 # EJEMPLO DE MANEJO  DE REPOSITORIOS Y CLASES POR MEDIO DE PAQUETES
-from persona import Persona
+from package.persona import Persona
 
 def main():
     yo = Persona('Isabel', 'Repetto', '12-02-1991', '56432865P', "Tailor's Court")
@@ -10,7 +10,5 @@ def main():
     print(yo.getAño())
     yo.setDia(22)
     print(yo)
-
-    
 
 main()
