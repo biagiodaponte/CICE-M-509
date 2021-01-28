@@ -11,8 +11,11 @@ class Persona(object):
         self.direccion=direccion
     def __str__(self):
         return f"nombre: {self.nombre}, apellido: {self.apellido}, fecha: {self.fecha}, dni: {self.dni}, direccion: {self.direccion}"
+    def getNombreCompleto(self):
+        return self.nombre+" "+self.apellido
 
 javi1=Persona("javi","menendez","19/06/1998","123456789F",["Narvaez","51","4º","Izq"])
 print(javi1)
+print(javi1.getNombreCompleto())
 # print("19/06/1998")
 # print(datetime.strptime(r"19/06/1998",r"d%/m%/Y%"))
