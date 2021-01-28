@@ -1,0 +1,3 @@
+email = ""
+clave = ""
+activo = False
