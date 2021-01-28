@@ -15,62 +15,62 @@
 #     dni:str
 #     direccion:list
 
-class Persona():
-    "clase que representa una Persona"
+# class Persona():
+#     "clase que representa una Persona"
 
-    def __init__(self, nombre, apellido, fecha_nacimiento, dni, direccion):
-        "Construcctor"
-        self.nombre = nombre
-        self.apellido = apellido
-        self.fecha_nacimiento = fecha_nacimiento    # 'dia-mes-año'
-        self.dni = dni
-        self.direccion = direccion
-        self.__dia = self.fecha_nacimiento.split('-')[0]
-        self.__mes = self.fecha_nacimiento.split('-')[1]
-        self.__año = self.fecha_nacimiento.split('-')[2]
+    # def __init__(self, nombre, apellido, fecha_nacimiento, dni, direccion):
+    #     "Construcctor"
+    #     self.nombre = nombre
+    #     self.apellido = apellido
+    #     self.fecha_nacimiento = fecha_nacimiento    # 'dia-mes-año'
+    #     self.dni = dni
+    #     self.direccion = direccion
+    #     self.__dia = self.fecha_nacimiento.split('-')[0]
+    #     self.__mes = self.fecha_nacimiento.split('-')[1]
+    #     self.__año = self.fecha_nacimiento.split('-')[2]
 
-    def __str__(self):
-        return f'''
-        Nombre: {self.nombre}
-        Apellido: {self.apellido}
-        Fecha de nacimiento: {self.fecha_nacimiento}
-        DNI: {self.dni}
-        Direccion: {self.direccion}
-        '''
+    # def __str__(self):
+    #     return f'''
+    #     Nombre: {self.nombre}
+    #     Apellido: {self.apellido}
+    #     Fecha de nacimiento: {self.fecha_nacimiento}
+    #     DNI: {self.dni}
+    #     Direccion: {self.direccion}
+    #     '''
 
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
 
-    def getNombreCompleto(self):
-        return f'{self.nombre} {self.apellido}'
+    # def getNombreCompleto(self):
+    #     return f'{self.nombre} {self.apellido}'
 
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
 
-    def getDia(self):
-        return self.__dia
+    # def getDia(self):
+    #     return self.__dia
 
-    def getMes(self):
-        return self.__mes
+    # def getMes(self):
+    #     return self.__mes
 
-    def getAño(self):
-        return self.__año
+    # def getAño(self):
+    #     return self.__año
 
 # 4.- Edite la clase Persona y 3 metodos que permita editar(setter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
 
-    def setDia(self, dia):
-        self.__dia = dia
-        self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
+    # def setDia(self, dia):
+    #     self.__dia = dia
+    #     self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
 
-    def setMes(self, mes):
-        self.__mes = mes
-        self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
+    # def setMes(self, mes):
+    #     self.__mes = mes
+    #     self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
 
 
-    def setAño(self, año):
-        self.__año = año
-        self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
+    # def setAño(self, año):
+    #     self.__año = año
+    #     self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
 
 
 # 5.- Cree una clase Usuario con los siguientes atributos:
@@ -78,12 +78,12 @@ class Persona():
 #     clave:str
 #     activo:bool
 
-class Usuario():
+# class Usuario():
 
-    def __init__(self, email, clave, activo):
-        self.email = email
-        self.clave = clave
-        self.activo = activo    # booleano
+#     def __init__(self, email, clave, activo):
+#         self.email = email
+#         self.clave = clave
+#         self.activo = activo    # booleano
 
 # 6.- Edite la clase Usuario y agregele un metodo:
     # def validacion(self, param_email, param_clave):
@@ -93,31 +93,31 @@ class Usuario():
 #     tambien debera verificar si ese encuentra activo o no self.activo -> ( True o False )
 #     y por ultimo devuelve True en caso de que sean iguales y False en caso de que no
     
-    def validacion(self, param_email, param_clave):
-        return True if (param_email == self.email and param_clave == self.clave) else False
+    # def validacion(self, param_email, param_clave):
+    #     return True if (param_email == self.email and param_clave == self.clave) else False
 
     
 # 6.- Cree una clase Departamento con los siguientes atributos:
 #     nombre:str
 #     telefono:str
 
-class Departamento():
+# class Departamento():
 
-    def __init__(self, nombre, telefono):
-        self.nombre = nombre
-        self.telefono = telefono
+#     def __init__(self, nombre, telefono):
+#         self.nombre = nombre
+#         self.telefono = telefono
 
 # 7.- Cree una clase Empleado que herede de Persona y Usuario, adicionalmente posea el atributo:
 #     salario:float
 #     horario:str
 
-class Empleado(Persona, Usuario):
+# class Empleado(Persona, Usuario):
 
-    def __init__(self, nombre, apellido, fecha_nacimiento, dni, direccion, email, clave, activo, salario, horario):
-        Persona.__init__(self, nombre, apellido, fecha_nacimiento, dni, direccion)
-        Usuario.__init__(self, email, clave, activo)
-        self.salario = salario
-        self.horario = horario
+#     def __init__(self, nombre, apellido, fecha_nacimiento, dni, direccion, email, clave, activo, salario, horario):
+#         Persona.__init__(self, nombre, apellido, fecha_nacimiento, dni, direccion)
+#         Usuario.__init__(self, email, clave, activo)
+#         self.salario = salario
+#         self.horario = horario
 
 # 8.- Edite la clase Departamento y agrege una lista de Empleados para poder manejar los empleados 
 #     de cada Departamento
