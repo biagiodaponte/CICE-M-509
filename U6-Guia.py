@@ -47,7 +47,6 @@ print (getNombreCompleto(albita))
 
 
 
-
     
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
