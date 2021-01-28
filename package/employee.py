@@ -16,7 +16,10 @@ class Employee(Person, User):
         self.schedule = schedule
         
 
+    
 
+    def __str__(self):
+        pass
 
 
 
