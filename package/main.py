@@ -5,6 +5,4 @@ from persona import Persona
 
 def main():
     persona = Persona()
-
-
 main()
