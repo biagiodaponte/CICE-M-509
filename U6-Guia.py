@@ -15,19 +15,46 @@
 #     dni:str
 #     direccion:list
 
+class Persona():
+    "clase que representa una Persona"
+
+    def __init__(self, nombre, apellido, fecha_nacimiento, dni, direccion):
+        "Construcctor"
+        self.nombre = nombre
+        self.apellido = apellido
+        self.fecha_nacimiento = fecha_nacimiento    # 'dia-mes-año'
+        self.dni = dni
+        self.direccion = direccion
+        self.__dia = self.fecha_nacimiento.split('-')[0]
+        self.__mes = self.fecha_nacimiento.split('-')[1]
+        self.__año = self.fecha_nacimiento.split('-')[2]
+
+    def __str__(self):
+        return f'''
+        Nombre: {self.nombre}
+        Apellido: {self.apellido}
+        Fecha de nacimiento: {self.fecha_nacimiento}
+        DNI: {self.dni}
+        Direccion: {self.direccion}
+        '''
+
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
-#     def getNombreCompleto(self):
-#         pass
-    
+
+    def getNombreCompleto(self):
+        return f'{self.nombre} {self.apellido}'
+
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
-#     def getDia(self):
-#         pass
-#     def getMes(self):
-#         pass
-#     def getAño(self):
-#         pass
+
+    def getDia(self):
+        print( self.__dia)
+
+    def getMes(self):
+        return self._mes
+
+    def getAño(self):
+        return self._año
 
 # 4.- Edite la clase Persona y 3 metodos que permita editar(setter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
@@ -76,8 +103,10 @@
 #     pregunta 10 y todas las funcionalidadesde que no pertenezcan a ninguna clase
 
 
-
-
+yo = Persona('Isabel', 'Repetto', '12-02-1991', '56432865P', "Tailor's Court")
+print(yo)
+# print(yo.getMes)
+# print(yo.getAño)
 
 
     
