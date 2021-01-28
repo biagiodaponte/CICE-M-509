@@ -1,7 +1,7 @@
 
 
 #IMPORTACION DE LA CLASE PERSONA
-from persona import Persona
+from package.persona import Persona
 
 def main():
     persona = Persona()
