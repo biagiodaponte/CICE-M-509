@@ -78,6 +78,13 @@ class Persona():
 #     clave:str
 #     activo:bool
 
+class Usuario():
+
+    def __init__(self, email, clave, activo):
+        self.email = email
+        self.clave = clave
+        self.activo = activo    # booleano
+
 # 6.- Edite la clase Usuario y agregele un metodo:
 #     def validacion(self, param_email, param_clave):
 #         pass
