@@ -27,11 +27,14 @@ class Persona():
 
     def __str__(self):
         cadena = "Mi nombre es" + self.nombre + self.apellido "y nací el" + self.fecha_nacimiento + ".Mi DNI es el" + "y vivo en" + self.direccion + "."
+        return cadena
 
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
-    # def getNombreCompleto(self):
-    #     pass
+    def getNombreCompleto(self):
+        cadena1 = "Mi nombre es" + self.nombre + self.apellido + "."
+        return cadena1
+    
     
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
