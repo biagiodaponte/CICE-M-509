@@ -48,22 +48,30 @@ class Persona():
 #     nota: el atributo fecha_nacimiento es un str ( String )
 
     def getDia(self):
-        print( self.__dia)
+        return self.__dia
 
     def getMes(self):
-        return self._mes
+        return self.__mes
 
     def getAño(self):
-        return self._año
+        return self.__año
 
 # 4.- Edite la clase Persona y 3 metodos que permita editar(setter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
-#     def setDia(self, dia):
-#         pass
-#     def setMes(self, mes):
-#         pass
-#     def setAño(self, año):
-#         pass
+
+    def setDia(self, dia):
+        self.__dia = dia
+        self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
+
+    def setMes(self, mes):
+        self.__mes = mes
+        self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
+
+
+    def setAño(self, año):
+        self.__año = año
+        self.fecha_nacimiento = f'{self.__dia}-{self.__mes}-{self.__año}'
+
 
 # 5.- Cree una clase Usuario con los siguientes atributos:
 #     email:str
@@ -104,9 +112,10 @@ class Persona():
 
 
 yo = Persona('Isabel', 'Repetto', '12-02-1991', '56432865P', "Tailor's Court")
-print(yo)
-# print(yo.getMes)
-# print(yo.getAño)
+
+print(yo.getDia())
+print(yo.getMes())
+print(yo.getAño())
 
 
     
