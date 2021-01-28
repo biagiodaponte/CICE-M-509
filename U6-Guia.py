@@ -16,9 +16,8 @@
 #     direccion:list
 
 class Persona():
-
-    def __init__(self, nombre:str, apellido:str, fecha_nacimiento:str, dni:srt,
-    direccion:list):
+    
+    def __init__(self, nombre , apellido , fecha_nacimiento, dni, direccion):
         self.nombre = nombre
         self.apellido = apellido
         self.fecha_nacimiento = fecha_nacimiento
@@ -26,7 +25,7 @@ class Persona():
         self.direccion = direccion
 
     def __str__(self):
-        cadena = "Mi nombre es" + self.nombre + self.apellido "y nací el" + self.fecha_nacimiento + ".Mi DNI es el" + "y vivo en" + self.direccion + "."
+        cadena = "Mi nombre es " + self.nombre +" " +self.apellido + " y nací el " + self.fecha_nacimiento + ". Mi DNI es el " + self.dni + " y vivo en " + self.direccion + "."
         return cadena
 
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
@@ -38,22 +37,31 @@ class Persona():
     
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
-#     def getDia(self):
-#         pass
-#     def getMes(self):
-#         pass
-#     def getAño(self):
-#         pass
+    def getDia(self):
+        dia  = self.fecha_nacimiento
+        return dia[0:2]
+    def getMes(self):
+        mes  = self.fecha_nacimiento
+        return mes[3:5]
+    def getAño(self):
+        año  = self.fecha_nacimiento
+        return año[6:10]
+
 
 # 4.- Edite la clase Persona y 3 metodos que permita editar(setter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
-#     def setDia(self, dia):
-#         pass
-#     def setMes(self, mes):
-#         pass
-#     def setAño(self, año):
-#         pass
+    def setDia(self, dia_1):
+        dia = self.fecha_nacimiento
+        return dia.replace(dia[0:2],dia_1)
+    def setMes(self, mes_1):
+        mes  = self.fecha_nacimiento
+        return mes.replace(mes[3:5],mes_1)
+    def setAño(self,año_1):
+        año  = self.fecha_nacimiento
+        return mes.replace(mes[6:10],año_1)
+persona_1 = Persona("Nicole","Martinez", "23-01-1999", "510216R", "Calle Javier de Miguel, 25")
 
+print(persona_1.setMes("04"))
 # 5.- Cree una clase Usuario con los siguientes atributos:
 #     email:str
 #     clave:str
