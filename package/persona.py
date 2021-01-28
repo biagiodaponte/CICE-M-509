@@ -7,9 +7,9 @@ class Persona():
         self.direccion = direccion
 
     def __str__(self):
-        return f'\n {self.nombre}  {self.apellido} \n'
+        return f'\n Nombre: {self.nombre}\n Apellido: {self.apellido}\n Fecha de nacimiento: {self.fnacimiento} \n Dni: {self.dni} \n Direccion: {self.direccion}\n'
 
 
-anonimo = Persona('Guillermo', 'Ginestal','7/03/89','204290350Y','calle' )
+anonimo = Persona('Guillermo', 'Ginestal','7/03/89','204290350Y','Calle Avila' )
 
 print(anonimo)
