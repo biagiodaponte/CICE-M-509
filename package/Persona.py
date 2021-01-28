@@ -20,6 +20,13 @@ class Persona(object):
     def getAño(self):
         return self.fecha.year
 
+    def setDia(self,dia):
+        self.fecha=self.fecha.replace(day=dia)
+    def setMes(self,mes):
+        self.fecha=self.fecha.replace(month=mes)
+    def setAño(self,año):
+        self.fecha=self.fecha.replace(year=año)
+
 javi1=Persona("javi","menendez","19/06/1998","123456789F",["Narvaez","51","4º","Izq"])
 print(javi1)
 print(javi1.getNombreCompleto())
@@ -27,6 +34,13 @@ print(javi1.getDia())
 print(javi1.getMes())
 print(javi1.getAño())
 
+print(javi1.setDia(1))
+print(javi1.setMes(11))
+print(javi1.setAño(2019))
+
+print(javi1.getDia())
+print(javi1.getMes())
+print(javi1.getAño())
 
 # print("19/06/1998")
 # hola=datetime.strptime("19/06/1998", "%d/%m/%Y")
