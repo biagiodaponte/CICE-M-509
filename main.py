@@ -4,5 +4,6 @@
 from package.persona import Persona
 
 def main():
-    persona = Persona()
+    persona = Persona("veronica","salguero","1995","09844744","cebreros")
+
 main()
