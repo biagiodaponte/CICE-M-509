@@ -101,9 +101,23 @@ class Usuario():
 #     nombre:str
 #     telefono:str
 
+class Departamento():
+
+    def __init__(self, nombre, telefono):
+        self.nombre = nombre
+        self.telefono = telefono
+
 # 7.- Cree una clase Empleado que herede de Persona y Usuario, adicionalmente posea el atributo:
 #     salario:float
 #     horario:str
+
+class Empleado(Persona, Usuario):
+
+    def __init__(self, nombre, apellido, fecha_nacimiento, dni, direccion, email, clave, activo, salario, horario):
+        Persona.__init__(self, nombre, apellido, fecha_nacimiento, dni, direccion)
+        Usuario.__init__(self, email, clave, activo)
+        self.salario = salario
+        self.horario = horario
 
 # 8.- Edite la clase Departamento y agrege una lista de Empleados para poder manejar los empleados 
 #     de cada Departamento
