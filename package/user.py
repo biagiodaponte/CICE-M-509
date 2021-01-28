@@ -19,7 +19,8 @@ class User:
             return False
     
     
-    
+obj = User()
+print(obj.validation('bbb@gmail.com', 'DarNesS'))
 
 
 
