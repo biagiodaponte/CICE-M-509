@@ -10,9 +10,9 @@ class Persona():
         return f'\n Nombre: {self.nombre}\n Apellido: {self.apellido}\n Fecha de nacimiento: {self.fnacimiento} \n Dni: {self.dni} \n Direccion: {self.direccion}\n'
 
     def getNombreCompleto(self):
-        return self.__nombre 
+        return self.nombre +' '+ self.apellido
 
 anonimo = Persona('Guillermo', 'Ginestal','7/03/89','204290350Y','Calle Avila' )
 
 print(anonimo)
-
+print(anonimo.getNombreCompleto())
