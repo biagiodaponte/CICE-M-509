@@ -32,6 +32,7 @@ class Persona (object):
         '''
 albita = Persona ('Alba', 'Herresanchez', '12-05-2002', '123455678', ['San Sebastian 13', 'Torrejon'])
 print (albita)
+#! paty revisa esta seccion que tiene un detalle en la funcio foo
 
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
