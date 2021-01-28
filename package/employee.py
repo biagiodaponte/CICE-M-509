@@ -15,14 +15,10 @@ class Employee(Person, User):
         self.salary = salary
         self.schedule = schedule
         
-
-    
-
     def __str__(self):
-        pass
+        return f"{self.name} {self.last_name} {self.dni} {self.email} {self.salary} {self.schedule}"
 
-
-
+obj = Employee('darius', 'kan', 'M-000-T', 'aaa@gmail.com', 'D4rk3ns5', 30.000, '10AM')
 
 
 

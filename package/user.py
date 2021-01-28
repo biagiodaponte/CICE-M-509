@@ -25,11 +25,11 @@ class User:
     def __str__(self):
         pass
     
-    
+"""    
 obj = User('ccc@gmail.com', 'V1cT0r1')
 print(obj.validation('bbb@gmail.com', 'DarNesS'))
 
-
+"""
 
 
 

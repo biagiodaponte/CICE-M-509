@@ -50,12 +50,12 @@ class Person:
     def __str__(self):
         return f"{self.name} {self.last_name} was born on {self.birthday}"
 
-
+"""
 obj = Person('Lorian', 'Fate', 'M-01000-T')
 print(obj)
 print(obj.get_full_name())
 print(obj.getDay())
-
+"""
 
 
 

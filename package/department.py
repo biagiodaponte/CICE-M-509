@@ -7,11 +7,11 @@
 
 class Department:
     list_employee = []
-    """
+    
     def __init__(self, name, telephone_number):
         self.name = name
         self.telephone_number = telephone_number
-    """
+    
     def average_salary(self):
         employee_salary = ''
         length = len(employee_salary)
@@ -19,6 +19,7 @@ class Department:
         return average
     
     def employee_report(self):
+
         """
         dic = {'victor':25.000, 'carlos':19.500, 'kezaya':35.000, 'dakonte':50.000, 'versus':27.500, 'dariusdarik':20.500}
         salary = list(dic.values())
@@ -39,7 +40,7 @@ class Department:
     def __str__(self):
         pass
 
-obj = Department()
+obj = Department('HHRR', '917000222')
 print(obj.employee_report())
 
 
