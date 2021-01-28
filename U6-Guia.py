@@ -14,7 +14,7 @@
 #     fecha de nacimiento:str -> 'dia-mes-año' 
 #     dni:str
 #     direccion:list
-
+class Persona (object):
     def __init__ (self, nombre, apellido, fecha_de_nacimiento, dni, direccion ):
         self.nombre = nombre
         self.apellido = apellido
@@ -30,7 +30,8 @@
         DNI : {self.dni} 
         direccion : {self.direccion}
         '''
-
+albita = Persona ('Alba', 'Herresanchez', '12-05-2002', '123455678', ['San Sebastian 13', 'Torrejon'])
+print (albita)
 
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
