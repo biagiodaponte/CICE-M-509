@@ -12,10 +12,23 @@ class Persona():
 
     def getNombreCompleto(self):
         return self.nombre + ' ' + self.apellido
-            
+        
+
+    def getDia(self):
+        dia = self.fecha_de_nacimiento.split('-')
+        return dia[0]
+    def getMes(self):
+        mes = self.fecha_de_nacimiento.split('-')
+        return mes[1]
+    def getAño(self):
+        año = self.fecha_de_nacimiento.split('-')
+        return año[2]
 
 
 individuo = Persona('Ramon', 'De Pitis', '21-2-1968', '53728994T', 'Calle caballo' )
 
 print(individuo)
 print(individuo.getNombreCompleto())
+print(individuo.getDia())
+print(individuo.getMes())
+print(individuo.getAño())
