@@ -15,10 +15,23 @@
 #     dni:str
 #     direccion:list
 
+class Persona():
+
+    def __init__(self, nombre:str, apellido:str, fecha_nacimiento:str, dni:srt,
+    direccion:list):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.fecha_nacimiento = fecha_nacimiento
+        self.dni = dni
+        self.direccion = direccion
+
+    def __str__(self):
+        cadena = "Mi nombre es" + self.nombre + self.apellido "y nací el" + self.fecha_nacimiento + ".Mi DNI es el" + "y vivo en" + self.direccion + "."
+
 # 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
 #     el nombre completo (nombre y apellido):
-#     def getNombreCompleto(self):
-#         pass
+    # def getNombreCompleto(self):
+    #     pass
     
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
