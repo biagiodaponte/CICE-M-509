@@ -86,13 +86,16 @@ class Usuario():
         self.activo = activo    # booleano
 
 # 6.- Edite la clase Usuario y agregele un metodo:
-#     def validacion(self, param_email, param_clave):
-#         pass
+    # def validacion(self, param_email, param_clave):
+    #     pass
 #     la funcion validacion recibe 2 parametros externos -> param_email y param_clave  
 #     y revisa si son iguales con los de la clase -> self.email y self.clave
 #     tambien debera verificar si ese encuentra activo o no self.activo -> ( True o False )
 #     y por ultimo devuelve True en caso de que sean iguales y False en caso de que no
     
+    def validacion(self, param_email, param_clave):
+        return True if (param_email == self.email and param_clave == self.clave) else False
+
     
 # 6.- Cree una clase Departamento con los siguientes atributos:
 #     nombre:str
@@ -118,15 +121,6 @@ class Usuario():
 #     pregunta 10 y todas las funcionalidadesde que no pertenezcan a ninguna clase
 
 
-yo = Persona('Isabel', 'Repetto', '12-02-1991', '56432865P', "Tailor's Court")
-
-print(yo.getDia())
-print(yo.getMes())
-print(yo.getAño())
-yo.setDia(22)
-print(yo)
-
-    
 
 
 
