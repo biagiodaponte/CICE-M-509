@@ -1,0 +1,48 @@
+
+class Persona (object):
+    def __init__ (self, nombre, apellido, fecha_de_nacimiento, dni, direccion ):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.__fecha_de_nacimiento = fecha_de_nacimiento
+        self.dni = dni
+        self.direccion = direccion
+
+    def __str__ (self):
+        return f'''
+        nombre : {self.nombre} 
+        apellido : {self.apellido}
+        fecha de nacimiento : {self.__fecha_de_nacimiento }
+        DNI : {self.dni} 
+        direccion : {self.direccion}
+        '''
+
+    def getNombreCompleto(self):
+        return f' El nombre completo de la persona es:  {self.nombre}  {self.apellido}'
+
+    def getDia(self):
+        dia_1 = self.__fecha_de_nacimiento.split ('-')
+        return dia_1[0]
+    def getMes(self):
+        mes = self.__fecha_de_nacimiento.split ('-')
+        return mes [1]
+    def getAño(self):
+        año = self.__fecha_de_nacimiento.split ('-')
+        return año [2]
+
+    def setDia(self, dia):
+        fecha = self.__fecha_de_nacimiento.split ('-') 
+        fecha [0] = dia
+        #return  str (dia) +'-'+ fecha [1]+'-'+fecha [2]
+
+    def setMes(self, mes):
+        fecha = self.__fecha_de_nacimiento.split ('-') 
+        fecha [1] = mes
+        #return  fecha [0] +'-'+ str (mes)+'-'+fecha [2]
+
+    def setAño(self, año):
+        fecha = self.__fecha_de_nacimiento.split ('-') 
+        fecha [2] = año
+        #return  fecha [0] +'-'+ fecha [1]+'-'+str (año)
+
+    def setFecha_De_Nacimiento (self, nueva_fecha_de_nacimiento):
+        self.__fecha_de_nacimiento = nueva_fecha_de_nacimiento
