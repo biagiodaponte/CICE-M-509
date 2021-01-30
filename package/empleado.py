@@ -13,6 +13,18 @@ class Empleado(Persona, Usuario):
         self.horario = horario
 
     def __str__(self):
-        print(f'\nLos datos que hereda de Persona son: {Persona.nombre}-{Persona.apellido}-{Persona.fecha_nacimiento}-{Persona.dni}-{Persona.direccion}')
-        print(f'\nLos datos que hereda de Usuario son: {Usuario.email}-{Usuario.clave}-{Usuario.activo}')
-        print(f'\nLos datos propios de la clase Empleado son: {self.horario}-{self.salario}')
+        return f'''
+        Los datos que hereda de Persona son: 
+            Nombre: {self.nombre}
+            Apellido: {self.apellido}
+            Fecha de nacimiento: {self.fecha_nacimiento}
+            DNI: {self.dni}
+            Direccion: {self.direccion}\n
+        Los datos que hereda de Usuario son: 
+            E-mail: {self.email}
+            Clave: {self.clave}
+            Activo: {self.activo}\n
+        Los datos propios de la clase Empleado son: 
+            Horario: {self.horario}
+            Salario: {self.salario}
+        '''

@@ -2,6 +2,7 @@
 # EJEMPLO DE MANEJO  DE REPOSITORIOS Y CLASES POR MEDIO DE PAQUETES
 from package.persona import Persona
 from package.usuario import Usuario
+from package.empleado import Empleado
 
 def main():
     # yo = Persona('Isabel', 'Repetto', '12-02-1991', '56432865P', "Tailor's Court")
