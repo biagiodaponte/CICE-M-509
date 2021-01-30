@@ -12,7 +12,9 @@ def main():
     # yo.setDia(22)
     # print(yo)
 
-    yo = Usuario('isargp@gmail.com', 'clavecita', False)
-    print(yo.validacion('isargp@gmail.com', 'clavecita'))
+    # yo = Usuario('isargp@gmail.com', 'clavecita', False)
+    # print(yo.validacion('isargp@gmail.com', 'clavecita'))
 
+    yo = Empleado('Isabel', 'Repetto', '12-02-1991', '46372836P','Tailors Court','isargp@gmail.com', '2424g3vcc', False, 1500.0, '8:00-15:00' )
+    print(yo)
 main()
