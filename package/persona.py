@@ -16,7 +16,7 @@ class Persona (object):
         direccion : {self.direccion}
         '''
 
-    def getNombreCompleto(self):
+    def getNombreCompleto (self):
         return f' El nombre completo de la persona es:  {self.nombre}  {self.apellido}'
 
     def getDia(self):
@@ -46,3 +46,19 @@ class Persona (object):
 
     def setFecha_De_Nacimiento (self, nueva_fecha_de_nacimiento):
         self.__fecha_de_nacimiento = nueva_fecha_de_nacimiento
+
+albita = Persona ('alba', 'Herresanchez', '12-05-2002', '1234565', 'torrejon')
+
+
+
+# print (albita)
+# print (albita.getDia())
+# print (albita.getMes ())
+# print (albita.getAño ())
+# print (albita.setDia(25))
+# print (albita.setMes(9))
+# print (albita.setAño(2005))
+
+#?print (getNombreCompleto(albita))  # POR QUÉ ME DA NameError: name 'getNombreCompleto' is not defined, SI EN LA GUIA SI ME FUNCIONA
+
+#!¿POR QUÉ EL SET ME DA NONE?, NO DEBERIA CAMBIAR LA FECHA DE NACIMIENTO CON LOS NUEVOS PARAMETROS???

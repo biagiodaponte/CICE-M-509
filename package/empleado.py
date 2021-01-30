@@ -1,6 +1,6 @@
 
-for package.persona import Persona
-for package.usuario import Usuario
+from persona import Persona
+from usuario import Usuario
 
 class Empleado:
     def __init__ (self, nombre, apellido, fecha_de_nacimiento, dni, direccion, email, clave, activo, salario, horario):
@@ -8,10 +8,13 @@ class Empleado:
         Usuario.__init__(self, email, clave, activo)
         self.salario = salario
         self.horario = horario
+        self.departamento = 'sin asignar'
 
     def __str__ (self):
-        return Persona.__str__(self) + '\n' + Usuario.__str__(self)
+        return Persona.__str__(self) + '\n' + Usuario.__str__(self) + '\n' #+ 'salario:' {self.salario} + '\n' + 'horario:' {self.horario} +'\n' + 'departamento:' {self.departamento}
 
-empleado_1 = Empleado( 'Paticia', 'Herresanchez',' 15-09-71', '223233444', 'iglesia 2', 'jfjfjffj@jfjfj','jfjfur123', True, 40000, 'partido')
 
-print (empleado.salario)
+
+
+
+
