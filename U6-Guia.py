@@ -126,6 +126,7 @@
 #     del Departamento, tambien un metodo que imprima un reporte de los empledos y sus salarios,
 #     ordenados de mayor a menor en funcion de sus salarios
 
+
 # 10.- Cree 1 Departamento y 10 empleados ( datos inventados por usted ), luego agregele los empleados
 #     al Departamento, y muestre los dos reportes de Departamento, calculo de media salarial del 
 #     Departamento y el reporte de los empleados y sus salarios 
