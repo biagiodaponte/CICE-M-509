@@ -22,10 +22,41 @@ class Persona():
         año = self.fnacimiento.split('/')
         return año[2]
 
-anonimo = Persona('Guillermo', 'Ginestal','7/03/89','204290350Y','Calle Avila' )
+    # def setDia(self,dia):
+    #     self.fnacimiento = self.fnacimiento.replace(dia = dia)
+    # def setMes(self,mes):
+    #     self.fnacimiento = self.fnacimiento.replace(mes = mes)
+    # def setAño(self,año):
+    #     self.fnacimiento = self.fnacimiento(año = año)
+
+anonimo = Persona('Guillermo', 'Ginestal','7/03/1989','204290350Y','Calle Avila' )
+
+    
 
 print(anonimo)
 print(anonimo.getNombreCompleto())
 print(anonimo.getDia())
 print(anonimo.getMes())
 print(anonimo.getAño())
+# print(anonimo.setDia(1))
+# print(anonimo.setMes(11))
+# print(anonimo.setAño(2019))
+
+class Usuario:
+    email = 'willyg.ginestal@gmail.com'
+    contraseña = '101010'
+    activo = True
+    
+    def __init__(self, email, contraseña):
+        self.email = email
+        self.contraseña = contraseña
+
+    def validation(self, param_email, param_contraseña):
+        if (self.email == param_email) and (self.contraseña == param_contraseña):
+            return True
+        else:
+            return False
+    
+    
+anonimo = Usuario('menganito@gmail.com', 'contra')
+print(anonimo.validation('willyg.ginestal@gmail.com', '101010'))
