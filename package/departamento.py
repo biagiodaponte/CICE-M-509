@@ -1,6 +1,6 @@
 
 
-from empleado import Empleado
+from .empleado import Empleado
 class Departamento:
     def __init__ (self, nombre, telefono):
         self.nombre = nombre
@@ -22,7 +22,7 @@ class Departamento:
 
 
 
-print (media_salarial (empleados_departamento_calidad))
+# print (media_salarial (empleados_departamento_calidad))
 
 
 #Edite la clase Departamento y agregele metodos para el calculo de la media salarial 

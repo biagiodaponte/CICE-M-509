@@ -25,7 +25,7 @@ empleado_9 = Empleado ('mariano', 'rojo', '18-10-1990', '98756045K', 'la paz 99'
 empleado_10 = Empleado ('luis', 'sanz', '29-12-1999', '123498675H', 'pinar 30', 'luis@gmail.com', '7658476', True, 30000, 'partido')
 
 print (empleado_1.salario)
-
+print(empleado_1)
 
 
 # empleados_departamento_calidad = [[empleado_1], [empleado_4], [empleado_8]]

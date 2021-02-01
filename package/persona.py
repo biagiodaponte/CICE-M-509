@@ -1,5 +1,5 @@
 
-class Persona (object):
+class Persona(object):
     def __init__ (self, nombre, apellido, fecha_de_nacimiento, dni, direccion ):
         self.nombre = nombre
         self.apellido = apellido
@@ -32,6 +32,8 @@ class Persona (object):
     def setDia(self, dia):
         fecha = self.__fecha_de_nacimiento.split ('-') 
         fecha [0] = dia
+        #TODO: Solo te falto la asignacion de la nueva fecha a al atributo __fecha_de_nacimiento
+        #TODO: self.__fecha_de_nacimiento = fecha [0] +'-'+ fecha[1]  +'-'+ fecha[2]
         #return  str (dia) +'-'+ fecha [1]+'-'+fecha [2]
 
     def setMes(self, mes):
@@ -62,3 +64,4 @@ albita = Persona ('alba', 'Herresanchez', '12-05-2002', '1234565', 'torrejon')
 #?print (getNombreCompleto(albita))  # POR QUÉ ME DA NameError: name 'getNombreCompleto' is not defined, SI EN LA GUIA SI ME FUNCIONA
 
 #!¿POR QUÉ EL SET ME DA NONE?, NO DEBERIA CAMBIAR LA FECHA DE NACIMIENTO CON LOS NUEVOS PARAMETROS???
+#TODO: Revisa la nota que de teje en la linea 35 de este fichero
