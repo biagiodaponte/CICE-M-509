@@ -4,7 +4,7 @@
 #6.- Create a class Department with the next attributes:
 #    name:str
 #    telephone number: str
-from employee import Employee
+from .employee import Employee
 
 class Department:
     list_employee = []

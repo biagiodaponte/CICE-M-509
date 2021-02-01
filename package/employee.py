@@ -4,8 +4,8 @@
 #7.- Create a class employee that inherit from Person and user and additionally have the next attributes:
 #    salary: float
 #    schedule: str
-from person import Person
-from user import User
+from .person import Person
+from .user import User
 
 class Employee(Person, User):
 
@@ -18,7 +18,7 @@ class Employee(Person, User):
     def __str__(self):
         return f"{self.name} {self.last_name} {self.dni} {self.email} {self.salary} {self.schedule}"
 
-obj = Employee('darius', 'kan', 'M-000-T', 'aaa@gmail.com', 'D4rk3ns5', 30.000, '10AM')
+#obj = Employee('darius', 'kan', 'M-000-T', 'aaa@gmail.com', 'D4rk3ns5', 30.000, '10AM')
 
 #print(obj.__dict__)
 
