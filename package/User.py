@@ -9,5 +9,7 @@ class User (object):
         activostr="online" if self.activo==True else "ofline"
         return f"email: {self.email}, clave: {self.clave}, activo: {activostr}"
 
+    def validacion(self, param_email, param_clave):
+        para
 user1=User("qwerty@asdf","123456",True)
 print(user1)
