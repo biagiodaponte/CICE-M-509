@@ -35,5 +35,4 @@ def main():
     print(f'Reporte salarial del departamento "{departamento_programacion.nombre}" ordenado de mayor a menor salario:\n{departamento_programacion.reporte_salarios()}')
 
 
-
 main()

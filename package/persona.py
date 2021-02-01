@@ -1,9 +1,7 @@
 
 class Persona():
-    "clase que representa una Persona"
 
     def __init__(self, nombre, apellido, fecha_nacimiento, dni, direccion):
-        "Construcctor"
         self.nombre = nombre
         self.apellido = apellido
         self.fecha_nacimiento = fecha_nacimiento    # 'dia-mes-año'
