@@ -3,6 +3,9 @@
 from package.persona import Persona
 
 def main():
+
+
+    
     objeto = Persona( 'Evander', 'Lopez', "00055m", "19-7-1992","povedilla")
     
 
