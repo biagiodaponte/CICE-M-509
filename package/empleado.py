@@ -16,6 +16,5 @@ class Empleado(Persona, Usuario):
     def __str__(self):
         return f'\n Nombre: {self.nombre}\n Apellido:{self.apellido}\n DNI: {self.dni}\n Dirección: {self.direccion}\n Horario: {self.horario}\n Email: {self.email }\n Contraseña: {self.contraseña }\n Salario: {self.salario }'
 
-e1 = Empleado('Raúl','González','4/10/1978','04358213-Z',['Calle piedra 12'],1400,'L-V 8H a 18H', 'raulito@gmail.com', 'asafsfafsf')
-
+e1 = Empleado(1400,'L-V 8H a 18H','raulito@gmail.com','asafsfafsf','Raúl','González','González', '04358213-Z', 'Calle Piedra 28')
 print('Información del empleado:\n',e1)
