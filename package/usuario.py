@@ -12,10 +12,14 @@
 #     y por ultimo devuelve True en caso de que sean iguales y False en caso de que no
 
 
-class Usuario:
+class Usuario():
     email = 'willyg.ginestal@gmail.com'
     contraseña = '101010'
+    print('El email del usuario es:',email)
+    print('La contraseña del usuario es:',contraseña,'\n')
     activo = True
+
+    print('Vamos a validar este email y esta contraseña...\n')
     
     def __init__(self, email, contraseña):
         self.email = email
@@ -23,9 +27,12 @@ class Usuario:
 
     def validation(self, param_email, param_contraseña):
         if (self.email == param_email) and (self.contraseña == param_contraseña):
-            return True
+            return True 
         else:
             return False
+            
     
-anonimo = Usuario('menganito@gmail.com', 'contra')
-print(anonimo.validation('willyg.ginestal@gmail.com', '101010'))
+anonimo = Usuario('menganito@gmail.com', 'CONTRA')
+print('El email introducido es menganito@gmail.com''\n''La contraseña introducida es CONTRA\n')
+print('Comprobamos....',anonimo.validation('willyg.ginestal@gmail.com', '101010'))
+print('El email o contraseña son falsos!!!')
