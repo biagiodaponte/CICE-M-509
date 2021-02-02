@@ -12,5 +12,5 @@ class Departamento():
     def __str__(self):
         return f'\n Nombre del departamento: {self.departamento_nombre}\n Teléfono del departamento: {self.departamento_telefono}'
 
-departamento = Departamento('Calidad','916374567')
+departamento = Departamento('Desarrollo','916374567')
 print(departamento)
