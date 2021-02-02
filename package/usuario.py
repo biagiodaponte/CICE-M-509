@@ -15,7 +15,7 @@
 class Usuario():
     email = 'willyg.ginestal@gmail.com'
     contraseña = '101010'
-    print('El email del usuario es:',email)
+    print('\nEl email del usuario es:',email)
     print('La contraseña del usuario es:',contraseña,'\n')
     activo = True
 
@@ -32,7 +32,7 @@ class Usuario():
             return False
             
     
-anonimo = Usuario('menganito@gmail.com', 'CONTRA')
-print('El email introducido es menganito@gmail.com''\n''La contraseña introducida es CONTRA\n')
+anonimo = Usuario('willyg.ginestal@gmail.com', '101010')
+print('El email introducido es willyg.ginestal@gmail.com''\n''La contraseña introducida es 101010\n')
 print('Comprobamos....',anonimo.validation('willyg.ginestal@gmail.com', '101010'))
-print('El email o contraseña son falsos!!!')
+print('El email y contraseña son correctos!!!\tContinuemos...\n')

@@ -15,6 +15,6 @@ class Empleado(Persona, Usuario):
     def __str__(self):
         return f'\n Horario: {self.horario} {self.email } {self.contraseña } {self.salario }'
 
-e1 = Empleado(1235,18, 'email', 'contraseña')
+e1 = Empleado(1235,18, 'willyg.ginestal@gmail.com', '101010')
 
-print('AQUI ES CHAMITO:',e1)
+print('Información del empleado Guillermo Ginestal:\n',e1)
