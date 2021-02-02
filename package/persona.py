@@ -1,3 +1,10 @@
+# 1.- Cree una clase Persona con los siguientes atributos: 
+#     nombre:str 
+#     apellido:str 
+#     fecha de nacimiento:str -> 'dia-mes-año' 
+#     dni:str
+#     direccion:list
+
 class Persona():
 
     def __init__(self, nombre:str, apellido:str, fecha_nacimiento:str, dni:str,direccion:list):
@@ -10,8 +17,22 @@ class Persona():
     def __str__(self):
         return f'\n Nombre: {self.nombre}\n Apellido: {self.apellido}\n Fecha de nacimiento: {self.fnacimiento} \n Dni: {self.dni} \n Direccion: {self.direccion}\n'
 
+# 2.- Edite la clase Persona y agrege un metodo que permita concatenar 
+#     el nombre completo (nombre y apellido):
+#     def getNombreCompleto(self):
+#         pass
+    
     def getNombreCompleto(self):
         return self.nombre +' '+ self.apellido
+
+# 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
+#     nota: el atributo fecha_nacimiento es un str ( String )
+#     def getDia(self):
+#         pass
+#     def getMes(self):
+#         pass
+#     def getAño(self):
+#         pass
 
     def getDia(self):
         dia = self.fnacimiento.split('/')
@@ -22,6 +43,15 @@ class Persona():
     def getAño(self):
         año = self.fnacimiento.split('/')
         return año[2]
+
+# 4.- Edite la clase Persona y 3 metodos que permita editar(setter) el dia , el mes y el año
+#     nota: el atributo fecha_nacimiento es un str ( String )
+#     def setDia(self, dia):
+#         pass
+#     def setMes(self, mes):
+#         pass
+#     def setAño(self, año):
+#         pass
 
     def setDia(self, hdia=None):
         dia = self.fnacimiento.split('/')
@@ -55,48 +85,6 @@ print(anonimo.setDia(16))
 print(anonimo.setDia(12))
 print(anonimo.setDia(1988))
 
-class Usuario:
-    email = 'willyg.ginestal@gmail.com'
-    contraseña = '101010'
-    activo = True
-    
-    def __init__(self, email, contraseña):
-        self.email = email
-        self.contraseña = contraseña
-
-    def validation(self, param_email, param_contraseña):
-        if (self.email == param_email) and (self.contraseña == param_contraseña):
-            return True
-        else:
-            return False
-    
-anonimo = Usuario('menganito@gmail.com', 'contra')
-print(anonimo.validation('willyg.ginestal@gmail.com', '101010'))
 
 
-class Departamento():
-    def __init__(self, departamento_nombre:str, departamento_telefono:str):
 
-        self.departamento_nombre = departamento_nombre
-        self.departamento_telefono = departamento_telefono
-    def __str__(self):
-        return f'\n Nombre del departamento: {self.departamento_nombre}\n Teléfono del departamento: {self.departamento_telefono}'
-
-departamento = Departamento('Calidad','916374567')
-print(departamento)
-
-class Empleado(Persona, Usuario):
-    
-    def __init__(self, salario:float, horario:str, email, contraseña ):
-        Usuario.__init__(self,  email, contraseña)
-        self.salario = salario
-        self.horario = horario
-    #def __float__(self):
-    #    return f'\n Salario: {self.salario}
-
-    def __str__(self):
-        return f'\n Horario: {self.horario} {self.email } {self.contraseña } {self.salario }'
-
-e1 = Empleado(1235,18, 'email', 'contraseña')
-
-print('AQUI ES CHAMITO:',e1)
