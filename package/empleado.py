@@ -13,8 +13,8 @@ class Empleado(Persona, Usuario):
         self.horario = horario
 
     def __str__(self):
-        return f'\n Horario: {self.horario} {self.email } {self.contraseña } {self.salario }'
+        return f'\n Horario: {self.horario}\n Email: {self.email }\n Contraseña: {self.contraseña }\n Salario: {self.salario }'
 
-e1 = Empleado(1235,18, 'willyg.ginestal@gmail.com', '101010')
+e1 = Empleado('1400 euros','8:00 a 18:00', 'willyg.ginestal@gmail.com', '101010')
 
 print('Información del empleado Guillermo Ginestal:\n',e1)
