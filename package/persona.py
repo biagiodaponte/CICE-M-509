@@ -23,7 +23,7 @@ class Persona():
 #         pass
     
     def getNombreCompleto(self):
-        return self.nombre +' '+ self.apellido
+        return self.nombre +' '+ self.apellido +' '+ 'nació el:'
 
 # 3.- Edite la clase Persona y 3 metodos que permita adquirir(getter) el dia , el mes y el año
 #     nota: el atributo fecha_nacimiento es un str ( String )
@@ -78,12 +78,15 @@ anonimo = Persona('Guillermo', 'Ginestal','7/03/1989','204290350Y','Calle Avila'
 
 print(anonimo)
 print(anonimo.getNombreCompleto())
-print(anonimo.getDia())
-print(anonimo.getMes())
-print(anonimo.getAño())
-print(anonimo.setDia(16))
-print(anonimo.setDia(12))
-print(anonimo.setDia(1988))
+print('Día >>>',anonimo.getDia())
+print('Mes >>>',anonimo.getMes())
+print('Año >>>',anonimo.getAño(),'\n')
+
+print('Editando la fecha de nacimiento...')
+
+print('Día >>>',anonimo.setDia(16))
+print('Mes >>>',anonimo.setDia(12))
+print('Año >>>',anonimo.setDia(1988))
 
 
 
