@@ -46,8 +46,6 @@ class Persona():
 
 anonimo = Persona('Guillermo', 'Ginestal','7/03/1989','204290350Y','Calle Avila' )
 
-
-
 print(anonimo)
 print(anonimo.getNombreCompleto())
 print(anonimo.getDia())
@@ -72,7 +70,33 @@ class Usuario:
         else:
             return False
     
-"""    
 anonimo = Usuario('menganito@gmail.com', 'contra')
 print(anonimo.validation('willyg.ginestal@gmail.com', '101010'))
-"""
+
+
+class Departamento():
+    def __init__(self, departamento_nombre:str, departamento_telefono:str):
+
+        self.departamento_nombre = departamento_nombre
+        self.departamento_telefono = departamento_telefono
+    def __str__(self):
+        return f'\n Nombre del departamento: {self.departamento_nombre}\n Teléfono del departamento: {self.departamento_telefono}'
+
+departamento = Departamento('Calidad','916374567')
+print(departamento)
+
+class Empleado(Persona, Usuario):
+    
+    def __init__(self, salario:float, horario:str, email, contraseña ):
+        Usuario.__init__(self,  email, contraseña)
+        self.salario = salario
+        self.horario = horario
+    #def __float__(self):
+    #    return f'\n Salario: {self.salario}
+
+    def __str__(self):
+        return f'\n Horario: {self.horario} {self.email } {self.contraseña } {self.salario }'
+
+e1 = Empleado(1235,18, 'email', 'contraseña')
+
+print('AQUI ES CHAMITO:',e1)
