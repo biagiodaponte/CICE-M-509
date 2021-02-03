@@ -8,7 +8,7 @@
 #* un constructor : __init__ 
 #* una funcion de impresion del objeto  : __str__ 
 
-# 1.- Cree una clase Persona con los siguientes atributos: 
+#* 1.- Cree una clase Persona con los siguientes atributos: 
 #     nombre:str 
 #     apellido:str 
 #     fecha de nacimiento:str -> 'dia-mes-año' 
@@ -74,8 +74,22 @@ print(persona_1.setMes("04"))
 #     y revisa si son iguales con los de la clase -> self.email y self.clave
 #     tambien debera verificar si ese encuentra activo o no self.activo -> ( True o False )
 #     y por ultimo devuelve True en caso de que sean iguales y False en caso de que no
-    
-    
+class Usuario:
+    '''Clase base de usuario'''
+    def __init__(self, email=str, clave=str, activo=bool):
+        self.email = email
+        self.clave = clave
+        self.activo = activo
+
+    def __str__(self):
+        return f'Mi email es:{self.email}'
+
+    def validacion(self, param_email, param_clave):
+        if self.email == param_email and self.clave == param_clave and self.activo:
+            return True
+        else: 
+            return False
+
 # 6.- Cree una clase Departamento con los siguientes atributos:
 #     nombre:str
 #     telefono:str
